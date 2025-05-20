@@ -36,10 +36,30 @@ class Stack{
 
     void Pop()
     {
-        if (IsEmpty())
+        if (isEmpty())
         {
             cout << "Stack is Empty"<< endl;
         }
+
+        cout << "Popped Value: " << top->data<< endl;
+        top = top->next;
         
     }
-}
+
+    void peek (){
+        if(top == NULL)
+        {
+            cout << "List Is Empty. " << endl;
+        }
+        else 
+        {
+            Node *current = top;
+            while (current != NULL)
+            {
+                cout << current->data << " " << endl;
+                current = current->next;
+            }
+            cout << endl;
+        }
+    }
+};
