@@ -113,6 +113,9 @@ int main()
                 cout << "stact is empty. No top Value." << endl;
             }
             break;
+        case 4:
+            cout <<  "Exiting program." << endl;
+            break;
         }
         cout << endl;
     }
