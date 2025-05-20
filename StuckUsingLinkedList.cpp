@@ -3,22 +3,23 @@ using namespace std;
 
 class Node
 {
-    public:
-        int data;
-        Node *next;
+public:
+    int data;
+    Node *next;
 
-        Node()
-        {
-            next = NULL;
-        }
+    Node()
+    {
+        next = NULL;
+    }
 };
 
-class Stack{
+class Stack
+{
 
-    private:
+private:
     Node *top;
 
-    public:
+public:
     Stack()
     {
         top = NULL;
@@ -27,10 +28,10 @@ class Stack{
     int push(int value)
     {
         Node *newNode = new Node();
-        newNode->data =value;
-        newNode->next=top;
+        newNode->data = value;
+        newNode->next = top;
         top = newNode;
-        cout << "Push value: " << value<< endl;
+        cout << "Push value: " << value << endl;
         return value;
     }
 
@@ -38,20 +39,20 @@ class Stack{
     {
         if (isEmpty())
         {
-            cout << "Stack is Empty"<< endl;
+            cout << "Stack is Empty" << endl;
         }
 
-        cout << "Popped Value: " << top->data<< endl;
+        cout << "Popped Value: " << top->data << endl;
         top = top->next;
-        
     }
 
-    void peek (){
-        if(top == NULL)
+    void peek()
+    {
+        if (top == NULL)
         {
             cout << "List Is Empty. " << endl;
         }
-        else 
+        else
         {
             Node *current = top;
             while (current != NULL)
@@ -71,5 +72,8 @@ class Stack{
 
 int main()
 {
-   Stack stact;
+    Stack stact;
+
+    int choice = 0;
+    int value;
 }
