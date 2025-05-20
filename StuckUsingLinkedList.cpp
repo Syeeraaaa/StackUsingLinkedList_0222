@@ -14,5 +14,7 @@ class Node
 };
 
 class Stack{
+    Node *top;
 
+    public:
 }
