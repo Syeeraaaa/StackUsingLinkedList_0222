@@ -34,4 +34,12 @@ class Stack{
         return value;
     }
 
+    void Pop()
+    {
+        if (IsEmpty())
+        {
+            cout << "Stack is Empty"<< endl;
+        }
+        
+    }
 }
