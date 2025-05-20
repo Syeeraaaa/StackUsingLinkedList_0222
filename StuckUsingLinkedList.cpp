@@ -104,7 +104,15 @@ int main()
                 cout << "Stact is empty. cannot pop." << endl;
             }
             break;
-        
+        case 3:
+            if (!stact.isEmpty())
+            {
+                stact.peek();
+            }
+            else{
+                cout << "stact is empty. No top Value." << endl;
+            }
+            break;
         }
         cout << endl;
     }
